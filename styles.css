@@ -1,3 +1,16 @@
-body{
-    background-color: blue;
+body {
+    background-image: url("./images/pageheader-1920w.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+.text-center {
+    text-align: center;
+    color: white;
+}
+.company-name {
+    font-size: 36px;
+    color: white;
 }
