@@ -33,7 +33,7 @@ body {
     display: flex;
     justify-content: flex-end; 
     width: 80%; 
-    margin: 0 auto; /* pro centrální zarovnání */
+    margin: 0 auto; 
     margin-bottom: 20%;
     margin-top: 3% ;
     
@@ -88,11 +88,11 @@ body {
   }
   
   .continue-button a {
-    color: white; /* barva textu */
-    text-decoration: none; /* bez podtržení */
-    background-color: rgb(255, 119, 0); /* oranžová */
-    padding: 10px 20px; /* vnitřní okraj */
-    font-size: 18px; /* velikost textu */
+    color: white; 
+    text-decoration: none; 
+    background-color: rgb(255, 119, 0); 
+    padding: 10px 20px; 
+    font-size: 18px; 
     
   }
   
@@ -102,8 +102,20 @@ body {
   .fa-arrow-down{
     font-size: 15px;
     padding-left: 5px;
+    
   }
 
   .custom-button {
     font-family: 'Open Sans', sans-serif;
+    
+    
   }
+  .custom-button i{
+    margin-left: 10px;
+  }
+.company-text{
+  font-size: 50px;
+  text-align: center;
+  font-family:'Roboto', sans-serif ;
+
+}
