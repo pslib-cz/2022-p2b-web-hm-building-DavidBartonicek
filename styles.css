@@ -1,13 +1,26 @@
 body {
-    background-image: url("./images/pageheader-1920w.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center ;
+    
+    
     font-family: 'Roboto', sans-serif;
     object-fit: cover;
     
 }
+.page-header{
+  background-image: url("./images/pageheader-1920w.jpg");
+  
+  background-size: 100% 100%;
+  
+  height: calc(100vh - 50px); /* -50px pro rozdíl výšky navbaru */
+  
+    
 
+}
+.page-footer{
+
+}
+.vyska{
+  height: 50px;
+}
 
 .text-center {
     text-align: center;
@@ -26,6 +39,7 @@ body {
 
 
   .navbar {
+    top: 10%;
     
     height: fit-content;
     align-items: center;
@@ -34,8 +48,8 @@ body {
     justify-content: flex-end; 
     width: 80%; 
     margin: 0 auto; 
-    margin-bottom: 20%;
-    margin-top: 3% ;
+    margin-bottom: 14%;
+    /* margin-top: 3% ; */
     
     
     
@@ -85,6 +99,7 @@ body {
 }
 .continue-button {
     text-align: center; /* pro centrální zarovnání tlačítka */
+    
   }
   
   .continue-button a {
@@ -117,5 +132,7 @@ body {
   font-size: 50px;
   text-align: center;
   font-family:'Roboto', sans-serif ;
+  margin-top: 600px;
+  
 
 }
