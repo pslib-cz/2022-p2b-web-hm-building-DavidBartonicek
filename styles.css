@@ -2,15 +2,108 @@ body {
     background-image: url("./images/pageheader-1920w.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: center ;
+    font-family: 'Roboto', sans-serif;
+    object-fit: cover;
     
 }
+
 
 .text-center {
     text-align: center;
     color: white;
 }
 .company-name {
-    font-size: 36px;
+    font-size: 110px;
     color: white;
+    
 }
+.company-description{
+    font-size: 50px;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+
+  .navbar {
+    
+    height: fit-content;
+    align-items: center;
+    background-color: white;
+    display: flex;
+    justify-content: flex-end; 
+    width: 80%; 
+    margin: 0 auto; /* pro centrální zarovnání */
+    margin-bottom: 20%;
+    margin-top: 3% ;
+    
+    
+    
+  }
+  
+  .navbar a {
+    color: lightgray;
+    text-decoration: none;
+    /*padding-left:  20px;
+    padding-right: 20px;*/
+    padding: 30px;
+    
+    
+    
+    font-size: 12px;
+    margin-left: 0;
+    
+  }
+  
+  .navbar a:hover {
+    background-color: rgb(255, 119, 0);
+    color: white;
+
+    
+  }
+
+
+
+  
+
+
+.logo {
+    flex: 1;
+    max-height: 100%;
+    height: auto;
+    background-size: contain;
+    
+    
+
+    
+}
+.navbar-buttons{
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    
+}
+.continue-button {
+    text-align: center; /* pro centrální zarovnání tlačítka */
+  }
+  
+  .continue-button a {
+    color: white; /* barva textu */
+    text-decoration: none; /* bez podtržení */
+    background-color: rgb(255, 119, 0); /* oranžová */
+    padding: 10px 20px; /* vnitřní okraj */
+    font-size: 18px; /* velikost textu */
+    
+  }
+  
+  .continue-button a:hover {
+    /* nastavení po najetí kurzoru */
+  }
+  .fa-arrow-down{
+    font-size: 15px;
+    padding-left: 5px;
+  }
+
+  .custom-button {
+    font-family: 'Open Sans', sans-serif;
+  }
