@@ -1,138 +1,204 @@
-body {
-    
-    
-    font-family: 'Roboto', sans-serif;
-    object-fit: cover;
-    
+* {
+  margin: 0;
+  padding: 0;
 }
-.page-header{
-  background-image: url("./images/pageheader-1920w.jpg");
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.body_services {
+  padding: 2em 1em;
+}
+
+.heading {
+  padding-top: 1em;
+  font-weight: 700;
+  font-size: 1.4em;
+  white-space: nowrap;
   
-  background-size: 100% 100%;
-  
-  height: calc(100vh - 50px); /* -50px pro rozdíl výšky navbaru */
-  
-    
-
 }
-.page-footer{
-
+p {
+  padding-top: 1em;
+  font-size: .9em;
 }
-.vyska{
-  height: 50px;
-}
-
-.text-center {
-    text-align: center;
-    color: white;
-}
-.company-name {
-    font-size: 110px;
-    color: white;
-    
-}
-.company-description{
-    font-size: 50px;
-    font-family: 'Open Sans', sans-serif;
-    
+@media (max-width: 350px) {
+  .header-main {
+      font-size: 1.4em;
+  }
+  .header-light {
+      font-size: 1em;
+  }
+  .body__header {
+      height: 25vh;
+  }
 }
 
 
-  .navbar {
-    top: 10%;
-    
-    height: fit-content;
-    align-items: center;
-    background-color: white;
-    display: flex;
-    justify-content: flex-end; 
-    width: 80%; 
-    margin: 0 auto; 
-    margin-bottom: 14%;
-    /* margin-top: 3% ; */
-    
-    
+
+
+
+@media (min-width: 1150px) {
+  .services-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5em;
+      grid-auto-flow: dense;
+  }
+  .orange-text{
+    color: #EB6C27;
     
   }
-  
-  .navbar a {
-    color: lightgray;
-    text-decoration: none;
-    /*padding-left:  20px;
-    padding-right: 20px;*/
-    padding: 30px;
-    
-    
-    
-    font-size: 12px;
-    margin-left: 0;
-    
+  .clanek-p {
+      grid-column: 2;
   }
-  
-  .navbar a:hover {
-    background-color: rgb(255, 119, 0);
-    color: white;
-
-    
+  .l-rad {
+      grid-column: 2;
   }
-
-
-
-  
-
-
-.logo {
-    flex: 1;
-    max-height: 100%;
-    height: auto;
-    background-size: contain;
-    
-    
-
-    
+  .clanek-l {
+      grid-column: 1;
+  }
+  .body_services {
+      width: 70vw;
+      margin: 0 auto;
+  }
+  .services-header{
+      text-align: center;
+  }
+  .heading {
+      font-size: 50px;
+  }
 }
-.navbar-buttons{
-    display: flex;
-    justify-content: flex-end;
-    flex: 1;
-    
-}
-.continue-button {
-    text-align: center; /* pro centrální zarovnání tlačítka */
-    
-  }
-  
-  .continue-button a {
-    color: white; 
-    text-decoration: none; 
-    background-color: rgb(255, 119, 0); 
-    padding: 10px 20px; 
-    font-size: 18px; 
-    
-  }
-  
-  .continue-button a:hover {
-    /* nastavení po najetí kurzoru */
-  }
-  .fa-arrow-down{
-    font-size: 15px;
-    padding-left: 5px;
-    
-  }
 
-  .custom-button {
-    font-family: 'Open Sans', sans-serif;
-    
-    
-  }
-  .custom-button i{
-    margin-left: 10px;
-  }
-.company-text{
-  font-size: 50px;
+.logo{
+  display: inline-block;
+  color: #FFFFFF;
+  font-size: 60px;
+  margin-left: 10px;
+}
+.nav {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  background-color: #EB6C27;
+  overflow: hidden;
+}
+.body__header{
+  background: linear-gradient(to right, rgba(70, 70, 70, 0.219),rgba(43, 43, 43, 0.897)),
+              url(./media/pageheader-1920w.jpg);
+  background-repeat: no-repeat;
+  height: 35vh;
+  background-size:  cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+.body_nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+
+.nav{
+  max-height: 0;
+  transition: max-height .5s ease-out;
+}
+.navbar a{
+  top: 0;
+  display: block;
+  text-align: left;
+  font-size: 1em;
+  padding: .8em;
+  padding-left: 2em;
+  color: #FFFFFF;
+  position: ;
+
+}
+
+.btn {
   text-align: center;
-  font-family:'Roboto', sans-serif ;
-  margin-top: 600px;
-  
+  display: inline-block;
+  color: #EB6C27;
+  font-size: 1.1em;
+  font-weight: 400;
+  padding: .4em 1.3em;
+  text-decoration: none;
+  border:  1px  #EB6C27 dashed ;
 
 }
+
+
+.topnav{
+  float: right;
+  padding: 40px 20px;
+}
+.topnav-line {
+  background-image: linear-gradient(to right, rgb(255, 102, 0), rgb(255, 188, 143));
+  display: block;
+  height: 5px;
+  position: relative;
+  width: 30px;
+}
+.topnav-line::before,
+.topnav-line::after{
+  background-image: linear-gradient(to right, rgb(255, 102, 0), rgb(255, 188, 143));
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.topnav-line::before{
+  top: 10px;
+}
+.topnav-line::after{
+  top: -10px;
+}
+.side-navbar {
+  display: none;
+}
+
+.side-navbar:checked ~ nav{
+  max-height: 100%;
+}
+
+.header-main {
+  color: #FFFFFF;
+  font-style: bold;
+  font-size: 2em;
+}
+
+.header-light {
+  font-weight: 200;
+  font-size: 1.3em;
+  padding-bottom: 1em;
+}
+
+.seznam{
+  list-style: inside;
+  padding-left: 10px;
+}
+
+
+.p-rad img {
+  border-radius: 0 0 30px 0;
+}
+
+.l-rad img {
+  border-radius: 0 0 0 30px;
+}
+
+.img-rsp {
+  display: block;
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  padding-top: 2.5em;
+}
+
+.button {
+  text-align: left;
+}
+
