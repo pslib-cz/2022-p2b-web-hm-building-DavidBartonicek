@@ -202,3 +202,57 @@ p {
   text-align: left;
 }
 
+.footer_nadpis{
+  
+  text-align: center;
+  color: white;
+}
+
+.footer_text{
+  
+  text-align: center;
+  color: white;
+}
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  margin-top: 5em;
+  padding: 2em 2em;
+  background-color: #EB6C27;
+  text-align: center;
+  
+}
+.button-third{
+  display: inline-block;
+  color: #EB6C27;
+  font-size: 1.1em;
+  padding: .4em 1.3em;
+  text-decoration: none;
+  background-color: white;
+  margin-top: 1.5em;
+  padding: 1em 1.5em;
+}
+.sluzby_nadpis{
+  
+}
+
+
+
+.sluzby_text{
+  
+}
+
+.sluzby{
+  padding: 0.5em;
+  font-size: 1em;
+}
+
+.stavby{
+  padding: 0.5em;
+}
+
+.sluzby ul{
+  margin-top: 5px;
+  list-style: inside;
+}
