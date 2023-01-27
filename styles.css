@@ -93,6 +93,7 @@ p {
   flex-direction: column;
   justify-content: end;
   align-items: center;
+  width: 100%;
 }
 .body_nav {
   position: sticky;
@@ -215,7 +216,7 @@ p {
 }
 
 .footer{
-  position: fixed;
+  
   bottom: 0;
   margin-top: 5em;
   padding: 2em 2em;
@@ -232,15 +233,6 @@ p {
   background-color: white;
   margin-top: 1.5em;
   padding: 1em 1.5em;
-}
-.sluzby_nadpis{
-  
-}
-
-
-
-.sluzby_text{
-  
 }
 
 .sluzby{
